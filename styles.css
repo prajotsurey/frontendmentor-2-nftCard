@@ -31,8 +31,52 @@ body {
   background-color: #0d192b;
   display: -ms-grid;
   display: grid;
-  place-content: center;
+  -ms-grid-rows: 1fr auto;
+      grid-template-rows: 1fr auto;
   font-family: 'Outfit', sans-serif;
+  font-weight: 300;
+  font-size: 18px;
+}
+
+main {
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+}
+
+footer.attribution {
+  font-size: 14px;
+  padding-top: 10px;
+  text-align: center;
+  color: #afc2dd;
+}
+
+footer.attribution a {
+  color: #d9e9ff;
+  font-weight: 400;
+}
+
+footer.attribution a:visited {
+  color: #8bacda;
+}
+
+footer.attribution a:hover {
+  color: #f4f4f4;
+}
+
+footer.attribution a:focus {
+  color: #ffffff;
+}
+
+hr {
+  color: #2f415b;
+  margin: 15px 0px;
+}
+
+@media (min-width: 215px) {
+  .noWrap {
+    white-space: nowrap;
+  }
 }
 
 .card {
@@ -43,6 +87,7 @@ body {
   padding: 20px;
   background-color: #14253d;
   color: white;
+  font-weight: 100;
 }
 
 .cardMainImage {
@@ -52,6 +97,89 @@ body {
 
 .cardHeading {
   font-size: 24px;
-  font-weight: 600;
+  font-weight: 400;
+}
+
+.cardDescription {
+  font-weight: 100;
+  color: #8bacda;
+}
+
+.cardData {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.cardData img {
+  margin-right: 5px;
+}
+
+.cardPrice {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: #00fff7;
+  font-weight: 400;
+}
+
+.cardTimeLeft {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: #8bacda;
+}
+
+.cardAuthor {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-weight: 100;
+  color: #8bacda;
+  margin-top: 15px;
+}
+
+.authorPfp {
+  height: auto;
+  width: 25px;
+  border-radius: 9999px;
+  border: 1px solid white;
+  margin-right: 15px;
+}
+
+.authorName {
+  font-weight: 300;
+  color: white;
 }
 /*# sourceMappingURL=styles.css.map */

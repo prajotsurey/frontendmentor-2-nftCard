@@ -30,9 +30,53 @@ body{
   box-sizing: border-box;
   background-color:  hsl(217, 54%, 11%);
   display:grid;
-  place-content: center;
+  grid-template-rows: 1fr auto;
   font-family: 'Outfit', sans-serif;
+  font-weight: 300;
+  font-size: 18px;
 }
+
+main{
+  align-self: center;
+}
+
+footer.attribution{
+  font-size: 14px;
+  padding-top: 10px;
+  text-align: center;
+  color:#afc2dd;
+
+  a{
+    color:#d9e9ff;
+    font-weight: 400;
+
+    &:visited{
+      color:hsl(215, 51%, 70%);
+    }
+
+    &:hover{
+      color:#f4f4f4;
+    }
+
+    &:focus{
+      color:#ffffff;
+    }
+
+
+  }
+}
+
+hr{
+  color: hsl(215, 32%, 27%);
+  margin: 15px 0px;
+}
+
+.noWrap{
+  @media (min-width:215px) {
+    white-space: nowrap;    
+  }
+}
+
 
 .card{
   width: 100%;
@@ -41,6 +85,7 @@ body{
   padding: 20px;
   background-color: hsl(216, 50%, 16%);
   color:hsl(0, 0%, 100%);
+  font-weight: 100;
 }
 
 .cardMainImage{
@@ -50,5 +95,62 @@ body{
 
 .cardHeading{
   font-size: 24px;
-  font-weight: 600;
+  font-weight: 400;
+}
+
+.cardDescription{
+  font-weight: 100;
+  color:hsl(215, 51%, 70%);
+}
+
+.cardData{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.cardData img{
+  margin-right: 5px;
+}
+
+.cardPrice{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  color:hsl(178, 100%, 50%);
+  font-weight: 400;
+}
+
+.cardTimeLeft{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  color:hsl(215, 51%, 70%);
+}
+
+.cardAuthor{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  font-weight: 100;
+  color: hsl(215, 51%, 70%);
+  margin-top: 15px;
+}
+
+.authorPfp{
+  height: auto;
+  width: 25px;
+  border-radius: 9999px;
+  border:1px solid white;
+  margin-right: 15px;
+}
+
+.authorName{
+  font-weight: 300;
+  color:hsl(0, 0%, 100%);
+}
+
+.attribution{
+
 }
