@@ -119,6 +119,7 @@ hr{
 
 .cardMainImage{
   width: 100%;
+  height: auto;
   border-radius: 15px;
 }
 
@@ -201,8 +202,4 @@ hr{
     color:hsl(178, 100%, 50%);
     cursor:pointer;
   }
-}
-
-.attribution{
-
 }
