@@ -134,9 +134,13 @@ hr {
   font-weight: 400;
 }
 
-.cardHeading:hover {
+.cardHeadingLink {
+  color: white;
+  text-decoration: none;
+}
+
+.cardHeadingLink:hover {
   color: #00fff7;
-  cursor: pointer;
 }
 
 .cardDescription {
@@ -239,6 +243,7 @@ hr {
 .authorName {
   font-weight: 300;
   color: white;
+  text-decoration: none;
 }
 
 .authorName:hover {
