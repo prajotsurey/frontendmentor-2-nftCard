@@ -96,6 +96,33 @@ hr {
   }
 }
 
+.cardImageContainer {
+  position: relative;
+  width: 100%;
+  border-radius: 15px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.mainOverlay {
+  display: none;
+  position: absolute;
+  top: 0px;
+  bottom: 0px;
+  left: 0px;
+  right: 0px;
+  place-content: center;
+  background: rgba(0, 255, 247, 0.5);
+  border-radius: 15px;
+}
+
+.cardImageContainer:hover .mainOverlay {
+  display: -ms-grid;
+  display: grid;
+  cursor: pointer;
+}
+
 .cardMainImage {
   width: 100%;
   border-radius: 15px;
@@ -104,6 +131,11 @@ hr {
 .cardHeading {
   font-size: 24px;
   font-weight: 400;
+}
+
+.cardHeading:hover {
+  color: #00fff7;
+  cursor: pointer;
 }
 
 .cardDescription {
@@ -206,5 +238,10 @@ hr {
 .authorName {
   font-weight: 300;
   color: white;
+}
+
+.authorName:hover {
+  color: #00fff7;
+  cursor: pointer;
 }
 /*# sourceMappingURL=styles.css.map */
