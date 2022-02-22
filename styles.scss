@@ -1,0 +1,54 @@
+@font-face {
+  font-family: "Outfit";
+  src: url("fonts/Outfit-Light.ttf");
+  font-weight: 100;
+}
+
+@font-face {
+  font-family: "Outfit";
+  src: url("fonts/Outfit-Regular.ttf");
+  font-weight: 300;
+}
+
+@font-face {
+  font-family: "Outfit";
+  src: url("fonts/Outfit-SemiBold.ttf");
+  font-weight: 400;
+}
+
+html{
+  width: 100%;
+  height: 100%;
+}
+
+
+body{
+  margin: 0px;
+  padding: 20px;
+  height: 100%;
+  width: 100%;
+  box-sizing: border-box;
+  background-color:  hsl(217, 54%, 11%);
+  display:grid;
+  place-content: center;
+  font-family: 'Outfit', sans-serif;
+}
+
+.card{
+  width: 100%;
+  box-sizing: border-box;
+  border-radius: 15px;
+  padding: 20px;
+  background-color: hsl(216, 50%, 16%);
+  color:hsl(0, 0%, 100%);
+}
+
+.cardMainImage{
+  width: 100%;
+  border-radius: 15px;
+}
+
+.cardHeading{
+  font-size: 24px;
+  font-weight: 600;
+}
