@@ -93,27 +93,23 @@ hr{
   }
 }
 
-.cardImageContainer{
+.cardImageLink{
+  display: inline-block;
   position: relative;
-  width: 100%;
   border-radius: 15px;
-  display: flex;
-}
-
-.mainOverlay{
-  display: none;
-  position: absolute;
-  top: 0px;
-  bottom: 0px;
-  left: 0px;
-  right: 0px;
-  place-content: center;
-  background: hsla(178, 100%, 50%, 0.5);
-  border-radius: 15px;
-
-  .cardImageContainer:hover &{
-    display: grid;
-    cursor: pointer;
+  &:hover{
+    &::after{
+      content: url('images/icon-view.svg');
+      border-radius: 15px;
+      position: absolute;
+      top:0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      display: grid;
+      place-items: center;
+      background-color: hsla(178, 100%, 50%, 0.5);
+    }
   }
 }
 
