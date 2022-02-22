@@ -23,7 +23,7 @@ html {
 
 body {
   margin: 0px;
-  padding: 20px;
+  padding: 20px 20px 0px 20px;
   height: 100%;
   width: 100%;
   -webkit-box-sizing: border-box;
@@ -39,14 +39,12 @@ body {
 }
 
 main {
-  -ms-flex-item-align: center;
-      -ms-grid-row-align: center;
-      align-self: center;
+  place-self: center;
 }
 
 footer.attribution {
   font-size: 14px;
-  padding-top: 10px;
+  padding: 20px 0px;
   text-align: center;
   color: #afc2dd;
 }
@@ -88,6 +86,14 @@ hr {
   background-color: #14253d;
   color: white;
   font-weight: 100;
+  -webkit-box-shadow: 0px 25px 5px 15px rgba(0, 0, 0, 0.1), 0px 10px 20px 40px rgba(0, 0, 0, 0.1);
+          box-shadow: 0px 25px 5px 15px rgba(0, 0, 0, 0.1), 0px 10px 20px 40px rgba(0, 0, 0, 0.1);
+}
+
+@media (min-width: 375px) {
+  .card {
+    width: 335px;
+  }
 }
 
 .cardMainImage {
@@ -109,16 +115,35 @@ hr {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: horizontal;
+  -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+}
+
+.cardData div {
+  margin-bottom: 5px;
+}
+
+@media (min-width: 300px) {
+  .cardData {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .cardData div {
+    margin-bottom: 0px;
+  }
 }
 
 .cardData img {
