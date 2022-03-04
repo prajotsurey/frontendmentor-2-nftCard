@@ -28,8 +28,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Solution URL: [https://www.frontendmentor.io/solutions/nft-display-card-using-sass-and-html-D64Zy9nsE](https://www.frontendmentor.io/solutions/nft-display-card-using-sass-and-html-D64Zy9nsE)
+- Live Site URL: [https://frontendmentor-2-nft-card.vercel.app/](https://frontendmentor-2-nft-card.vercel.app/)
 
 ## My process
 
